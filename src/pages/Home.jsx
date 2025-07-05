@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -9,28 +8,28 @@ export default function Home() {
       <section className="hero-section-exact">
         <div className="container">
           <div className="hero-content-exact">
-            <div className="hero-text-exact">
-              <h1 className="hero-title-exact">
+            <div className="hero-text-exact slide-in-left">
+              <h1 className="hero-title-exact typewriter">
                 The Best SEO Agency to Grow Your Business Online
               </h1>
-              <p className="hero-description-exact">
+              <p className="hero-description-exact fade-in" style={{ animationDelay: '1s' }}>
                 Drive more traffic, increase rankings and grow your business with our data-driven SEO strategies. Get started today and see real results.
               </p>
-              <div className="hero-buttons-exact">
-                <Link to="/website-audit" className="btn-get-started">
+              <div className="hero-buttons-exact bounce-in" style={{ animationDelay: '1.5s' }}>
+                <Link to="/website-audit" className="btn-get-started hover-glow">
                   Get Started
                 </Link>
-                <Link to="/contact" className="btn-learn-more">
+                <Link to="/contact" className="btn-learn-more hover-scale">
                   Learn More
                 </Link>
               </div>
             </div>
-            <div className="hero-image-exact">
+            <div className="hero-image-exact slide-in-right">
               <div className="hero-graphic">
-                <div className="graphic-circle-1"></div>
-                <div className="graphic-circle-2"></div>
-                <div className="graphic-circle-3"></div>
-                <div className="hero-icon">🚀</div>
+                <div className="graphic-circle-1 glow"></div>
+                <div className="graphic-circle-2 glow"></div>
+                <div className="graphic-circle-3 glow"></div>
+                <div className="hero-icon pulse">🚀</div>
               </div>
             </div>
           </div>
@@ -41,18 +40,18 @@ export default function Home() {
       <section className="features-section-exact">
         <div className="container">
           <div className="features-grid-exact">
-            <div className="feature-box">
-              <div className="feature-icon-exact">📈</div>
+            <div className="feature-box floating hover-lift" style={{ animationDelay: '0.2s' }}>
+              <div className="feature-icon-exact bounce-in">📈</div>
               <h3>Increase Traffic</h3>
               <p>Boost your organic search traffic with proven SEO strategies</p>
             </div>
-            <div className="feature-box">
-              <div className="feature-icon-exact">🎯</div>
+            <div className="feature-box floating hover-lift" style={{ animationDelay: '0.4s' }}>
+              <div className="feature-icon-exact bounce-in" style={{ animationDelay: '0.2s' }}>🎯</div>
               <h3>Higher Rankings</h3>
               <p>Rank higher on Google for keywords that matter to your business</p>
             </div>
-            <div className="feature-box">
-              <div className="feature-icon-exact">💰</div>
+            <div className="feature-box floating hover-lift" style={{ animationDelay: '0.6s' }}>
+              <div className="feature-icon-exact bounce-in" style={{ animationDelay: '0.4s' }}>💰</div>
               <h3>More Revenue</h3>
               <p>Convert visitors into customers with optimized landing pages</p>
             </div>
@@ -184,7 +183,7 @@ export default function Home() {
                   <a href="https://www.instagram.com/serpshine" target="_blank" rel="noopener noreferrer" className="social-icon">📷</a>
                 </div>
               </div>
-              
+
               <div className="footer-links-section">
                 <div className="footer-column">
                   <h4>Services</h4>
@@ -195,7 +194,7 @@ export default function Home() {
                     <li><Link to="/website-audit">Website Audit</Link></li>
                   </ul>
                 </div>
-                
+
                 <div className="footer-column">
                   <h4>Company</h4>
                   <ul>
@@ -205,7 +204,7 @@ export default function Home() {
                     <li><Link to="/contact">Contact</Link></li>
                   </ul>
                 </div>
-                
+
                 <div className="footer-column">
                   <h4>Resources</h4>
                   <ul>
@@ -215,7 +214,7 @@ export default function Home() {
                     <li><a href="#faq">FAQ</a></li>
                   </ul>
                 </div>
-                
+
                 <div className="footer-column">
                   <h4>Contact Info</h4>
                   <ul>
@@ -227,7 +226,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            
+
             <div className="footer-bottom-exact">
               <div className="footer-bottom-content">
                 <p>&copy; 2024 SerpShine. All rights reserved.</p>

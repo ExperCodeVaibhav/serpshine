@@ -37,9 +37,36 @@ export default function Header() {
             <Link to="/services" className="nav-link">Services</Link>
             <div className="dropdown-menu">
               <Link to="/seo-services" className="dropdown-item">SEO Services</Link>
+              <Link to="/local-seo" className="dropdown-item">Local SEO</Link>
+              <Link to="/technical-seo" className="dropdown-item">Technical SEO</Link>
+              <Link to="/ecommerce-seo" className="dropdown-item">E-commerce SEO</Link>
               <Link to="/content-marketing" className="dropdown-item">Content Marketing</Link>
-              <Link to="/paid-advertising" className="dropdown-item">Paid Advertising</Link>
-              <Link to="/website-audit" className="dropdown-item">Website Audit</Link>
+              <Link to="/social-media-marketing" className="dropdown-item">Social Media Marketing</Link>
+              <Link to="/ppc-management" className="dropdown-item">PPC Management</Link>
+              <Link to="/web-design" className="dropdown-item">Web Design</Link>
+            </div>
+          </li>
+
+          <li className="nav-item dropdown">
+            <Link to="/industries" className="nav-link">Industries</Link>
+            <div className="dropdown-menu">
+              <Link to="/healthcare-seo" className="dropdown-item">Healthcare SEO</Link>
+              <Link to="/legal-seo" className="dropdown-item">Legal SEO</Link>
+              <Link to="/real-estate-seo" className="dropdown-item">Real Estate SEO</Link>
+              <Link to="/automotive-seo" className="dropdown-item">Automotive SEO</Link>
+              <Link to="/restaurant-seo" className="dropdown-item">Restaurant SEO</Link>
+              <Link to="/finance-seo" className="dropdown-item">Finance SEO</Link>
+            </div>
+          </li>
+
+          <li className="nav-item dropdown">
+            <Link to="/resources" className="nav-link">Resources</Link>
+            <div className="dropdown-menu">
+              <Link to="/blog" className="dropdown-item">Blog</Link>
+              <Link to="/case-studies" className="dropdown-item">Case Studies</Link>
+              <Link to="/seo-tools" className="dropdown-item">SEO Tools</Link>
+              <Link to="/guides" className="dropdown-item">SEO Guides</Link>
+              <Link to="/webinars" className="dropdown-item">Webinars</Link>
             </div>
           </li>
 
@@ -47,12 +74,6 @@ export default function Header() {
             <Link to="/about" className="nav-link">About</Link>
           </li>
 
-          <li className="nav-item">
-            <Link to="/portfolio" className="nav-link">Portfolio</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/blog" className="nav-link">Blog</Link>
-          </li>
           <li className="nav-item">
             <Link to="/contact" className="nav-link">Contact</Link>
           </li>
