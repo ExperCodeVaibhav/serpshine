@@ -118,6 +118,55 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Blog Section */}
+      <section className="blog-section-exact">
+        <div className="container">
+          <div className="section-header-exact">
+            <h2>Latest SEO Insights</h2>
+            <p>Stay updated with the latest SEO trends, strategies, and insights from our experts</p>
+          </div>
+          <div className="blog-grid-exact">
+            <article className="blog-card floating hover-lift" style={{ animationDelay: '0.1s' }}>
+              <div className="blog-category">SEO Trends</div>
+              <h3>10 SEO Trends That Will Dominate 2024</h3>
+              <p>Stay ahead of the curve with these emerging SEO trends and algorithm updates.</p>
+              <div className="blog-meta">
+                <span>January 15, 2024</span>
+                <span>5 min read</span>
+              </div>
+              <Link to="/blog" className="blog-read-more">Read More →</Link>
+            </article>
+            
+            <article className="blog-card floating hover-lift" style={{ animationDelay: '0.2s' }}>
+              <div className="blog-category">Technical SEO</div>
+              <h3>The Complete Guide to Technical SEO</h3>
+              <p>Master the technical aspects of SEO to improve your website's performance and rankings.</p>
+              <div className="blog-meta">
+                <span>January 10, 2024</span>
+                <span>12 min read</span>
+              </div>
+              <Link to="/blog" className="blog-read-more">Read More →</Link>
+            </article>
+            
+            <article className="blog-card floating hover-lift" style={{ animationDelay: '0.3s' }}>
+              <div className="blog-category">Content Marketing</div>
+              <h3>Content Marketing Strategies That Actually Work</h3>
+              <p>Proven content marketing tactics to drive traffic and engagement.</p>
+              <div className="blog-meta">
+                <span>January 5, 2024</span>
+                <span>8 min read</span>
+              </div>
+              <Link to="/blog" className="blog-read-more">Read More →</Link>
+            </article>
+          </div>
+          <div className="blog-cta">
+            <Link to="/blog" className="btn-view-all-posts">
+              View All Posts
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Trusted Partners Section */}
       <section className="partners-section-exact">
         <div className="container">
