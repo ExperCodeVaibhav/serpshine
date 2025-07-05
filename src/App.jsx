@@ -16,6 +16,14 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
+import SocialMediaMarketing from './pages/SocialMediaMarketing';
+import PPCManagement from './pages/PPCManagement';
+import EmailMarketing from './pages/EmailMarketing';
+import WebDevelopment from './pages/WebDevelopment';
+import MobileAppDevelopment from './pages/MobileAppDevelopment';
+import UIUXDesign from './pages/UIUXDesign';
+import Technologies from './pages/Technologies';
+import Company from './pages/Company';
 import './App.css';
 
 export default function App() {
@@ -39,54 +47,45 @@ export default function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
-          {/* Placeholder routes for additional pages */}
-          <Route path="/social-media-marketing" element={<Services />} />
-          <Route path="/ppc-management" element={<PaidAdvertising />} />
-          <Route path="/web-design" element={<Services />} />
-          <Route path="/healthcare-seo" element={<Industries />} />
-          <Route path="/legal-seo" element={<Industries />} />
-          <Route path="/real-estate-seo" element={<Industries />} />
-          <Route path="/automotive-seo" element={<Industries />} />
-          <Route path="/restaurant-seo" element={<Industries />} />
-          <Route path="/finance-seo" element={<Industries />} />
-          <Route path="/case-studies" element={<Resources />} />
-          <Route path="/seo-tools" element={<WebsiteAudit />} />
-          <Route path="/guides" element={<Resources />} />
-          <Route path="/webinars" element={<Resources />} />
+          {/* Marketing Services */}
+          <Route path="/social-media-marketing" element={<SocialMediaMarketing />} />
+          <Route path="/ppc-management" element={<PPCManagement />} />
+          <Route path="/email-marketing" element={<EmailMarketing />} />
+          <Route path="/web-design" element={<UIUXDesign />} />
           
           {/* Development Services */}
-          <Route path="/web-development" element={<Services />} />
-          <Route path="/wordpress-development" element={<Services />} />
-          <Route path="/ecommerce-development" element={<Services />} />
-          <Route path="/custom-web-applications" element={<Services />} />
-          <Route path="/api-development" element={<Services />} />
-          <Route path="/cms-development" element={<Services />} />
-          <Route path="/mobile-app-development" element={<Services />} />
-          <Route path="/ios-development" element={<Services />} />
-          <Route path="/android-development" element={<Services />} />
-          <Route path="/react-native-development" element={<Services />} />
-          <Route path="/flutter-development" element={<Services />} />
-          <Route path="/ui-ux-design" element={<Services />} />
-          <Route path="/graphic-design" element={<Services />} />
-          <Route path="/logo-design" element={<Services />} />
-          <Route path="/branding" element={<Services />} />
+          <Route path="/web-development" element={<WebDevelopment />} />
+          <Route path="/wordpress-development" element={<WebDevelopment />} />
+          <Route path="/ecommerce-development" element={<WebDevelopment />} />
+          <Route path="/custom-web-applications" element={<WebDevelopment />} />
+          <Route path="/api-development" element={<WebDevelopment />} />
+          <Route path="/cms-development" element={<WebDevelopment />} />
+          <Route path="/mobile-app-development" element={<MobileAppDevelopment />} />
+          <Route path="/ios-development" element={<MobileAppDevelopment />} />
+          <Route path="/android-development" element={<MobileAppDevelopment />} />
+          <Route path="/react-native-development" element={<MobileAppDevelopment />} />
+          <Route path="/flutter-development" element={<MobileAppDevelopment />} />
+          <Route path="/ui-ux-design" element={<UIUXDesign />} />
+          <Route path="/graphic-design" element={<UIUXDesign />} />
+          <Route path="/logo-design" element={<UIUXDesign />} />
+          <Route path="/branding" element={<UIUXDesign />} />
           
           {/* Technology Pages */}
-          <Route path="/technologies" element={<Services />} />
-          <Route path="/react-development" element={<Services />} />
-          <Route path="/angular-development" element={<Services />} />
-          <Route path="/vue-development" element={<Services />} />
-          <Route path="/javascript-development" element={<Services />} />
-          <Route path="/typescript-development" element={<Services />} />
-          <Route path="/nodejs-development" element={<Services />} />
-          <Route path="/python-development" element={<Services />} />
-          <Route path="/php-development" element={<Services />} />
-          <Route path="/dotnet-development" element={<Services />} />
-          <Route path="/java-development" element={<Services />} />
-          <Route path="/mysql-development" element={<Services />} />
-          <Route path="/mongodb-development" element={<Services />} />
-          <Route path="/postgresql-development" element={<Services />} />
-          <Route path="/firebase-development" element={<Services />} />
+          <Route path="/technologies" element={<Technologies />} />
+          <Route path="/react-development" element={<Technologies />} />
+          <Route path="/angular-development" element={<Technologies />} />
+          <Route path="/vue-development" element={<Technologies />} />
+          <Route path="/javascript-development" element={<Technologies />} />
+          <Route path="/typescript-development" element={<Technologies />} />
+          <Route path="/nodejs-development" element={<Technologies />} />
+          <Route path="/python-development" element={<Technologies />} />
+          <Route path="/php-development" element={<Technologies />} />
+          <Route path="/dotnet-development" element={<Technologies />} />
+          <Route path="/java-development" element={<Technologies />} />
+          <Route path="/mysql-development" element={<Technologies />} />
+          <Route path="/mongodb-development" element={<Technologies />} />
+          <Route path="/postgresql-development" element={<Technologies />} />
+          <Route path="/firebase-development" element={<Technologies />} />
           
           {/* Industry Solutions */}
           <Route path="/healthcare-solutions" element={<Industries />} />
@@ -100,11 +99,11 @@ export default function App() {
           <Route path="/media-solutions" element={<Industries />} />
           
           {/* Company Pages */}
-          <Route path="/company" element={<About />} />
-          <Route path="/team" element={<About />} />
-          <Route path="/careers" element={<About />} />
-          <Route path="/testimonials" element={<About />} />
-          <Route path="/why-choose-us" element={<About />} />
+          <Route path="/company" element={<Company />} />
+          <Route path="/team" element={<Company />} />
+          <Route path="/careers" element={<Company />} />
+          <Route path="/testimonials" element={<Company />} />
+          <Route path="/why-choose-us" element={<Company />} />
           
           {/* Portfolio Pages */}
           <Route path="/web-portfolio" element={<Portfolio />} />
@@ -114,12 +113,14 @@ export default function App() {
           <Route path="/branding-portfolio" element={<Portfolio />} />
           
           {/* Resource Pages */}
+          <Route path="/case-studies" element={<Resources />} />
           <Route path="/whitepapers" element={<Resources />} />
           <Route path="/tools" element={<WebsiteAudit />} />
+          <Route path="/guides" element={<Resources />} />
+          <Route path="/webinars" element={<Resources />} />
           <Route path="/faqs" element={<Resources />} />
           
-          {/* Marketing Services */}
-          <Route path="/email-marketing" element={<ContentMarketing />} />
+          {/* Additional Pages */}
           <Route path="/get-quote" element={<Contact />} />
         </Routes>
       </div>
