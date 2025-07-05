@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -21,7 +20,7 @@ export default function Header() {
         <Link to="/" className="logo">
           SerpShine
         </Link>
-        
+
         <button 
           className="mobile-menu-toggle"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -33,7 +32,7 @@ export default function Header() {
           <li className="nav-item">
             <Link to="/" className="nav-link">Home</Link>
           </li>
-          
+
           <li className="nav-item dropdown">
             <Link to="/services" className="nav-link">Services</Link>
             <div className="dropdown-menu">
@@ -43,19 +42,17 @@ export default function Header() {
               <Link to="/website-audit" className="dropdown-item">Website Audit</Link>
             </div>
           </li>
-          
+
           <li className="nav-item">
             <Link to="/about" className="nav-link">About</Link>
           </li>
-          
+
           <li className="nav-item">
             <Link to="/portfolio" className="nav-link">Portfolio</Link>
           </li>
-          
           <li className="nav-item">
             <Link to="/blog" className="nav-link">Blog</Link>
           </li>
-          
           <li className="nav-item">
             <Link to="/contact" className="nav-link">Contact</Link>
           </li>
