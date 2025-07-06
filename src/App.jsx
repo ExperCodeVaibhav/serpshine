@@ -11,6 +11,16 @@ import ContentMarketing from './pages/ContentMarketing';
 import PaidAdvertising from './pages/PaidAdvertising';
 import WebsiteAudit from './pages/WebsiteAudit';
 import Industries from './pages/Industries';
+import Technologies from './pages/Technologies';
+import HealthcareSEO from './pages/HealthcareSEO';
+import DentalSEO from './pages/DentalSEO';
+import VeterinarySEO from './pages/VeterinarySEO';
+import LegalSEO from './pages/LegalSEO';
+import AccountingSEO from './pages/AccountingSEO';
+import ConsultingSEO from './pages/ConsultingSEO';
+import RealEstateSEO from './pages/RealEstateSEO';
+import RestaurantSEO from './pages/RestaurantSEO';
+import AutomotiveSEO from './pages/AutomotiveSEO';
 import Resources from './pages/Resources';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
@@ -22,7 +32,6 @@ import EmailMarketing from './pages/EmailMarketing';
 import WebDevelopment from './pages/WebDevelopment';
 import MobileAppDevelopment from './pages/MobileAppDevelopment';
 import UIUXDesign from './pages/UIUXDesign';
-import Technologies from './pages/Technologies';
 import Company from './pages/Company';
 import './App.css';
 
@@ -52,7 +61,7 @@ export default function App() {
           <Route path="/ppc-management" element={<PPCManagement />} />
           <Route path="/email-marketing" element={<EmailMarketing />} />
           <Route path="/web-design" element={<UIUXDesign />} />
-          
+
           {/* Development Services */}
           <Route path="/web-development" element={<WebDevelopment />} />
           <Route path="/wordpress-development" element={<WebDevelopment />} />
@@ -69,7 +78,7 @@ export default function App() {
           <Route path="/graphic-design" element={<UIUXDesign />} />
           <Route path="/logo-design" element={<UIUXDesign />} />
           <Route path="/branding" element={<UIUXDesign />} />
-          
+
           {/* Technology Pages */}
           <Route path="/technologies" element={<Technologies />} />
           <Route path="/react-development" element={<Technologies />} />
@@ -86,7 +95,7 @@ export default function App() {
           <Route path="/mongodb-development" element={<Technologies />} />
           <Route path="/postgresql-development" element={<Technologies />} />
           <Route path="/firebase-development" element={<Technologies />} />
-          
+
           {/* Industry Solutions */}
           <Route path="/healthcare-solutions" element={<Industries />} />
           <Route path="/fintech-solutions" element={<Industries />} />
@@ -97,21 +106,32 @@ export default function App() {
           <Route path="/restaurant-solutions" element={<Industries />} />
           <Route path="/travel-solutions" element={<Industries />} />
           <Route path="/media-solutions" element={<Industries />} />
-          
+
+          {/* New Industry Routes */}
+          <Route path="/healthcare-seo" element={<HealthcareSEO />} />
+          <Route path="/dental-seo" element={<DentalSEO />} />
+          <Route path="/veterinary-seo" element={<VeterinarySEO />} />
+          <Route path="/legal-seo" element={<LegalSEO />} />
+          <Route path="/accounting-seo" element={<AccountingSEO />} />
+          <Route path="/consulting-seo" element={<ConsultingSEO />} />
+          <Route path="/real-estate-seo" element={<RealEstateSEO />} />
+          <Route path="/restaurant-seo" element={<RestaurantSEO />} />
+          <Route path="/automotive-seo" element={<AutomotiveSEO />} />
+
           {/* Company Pages */}
           <Route path="/company" element={<Company />} />
           <Route path="/team" element={<Company />} />
           <Route path="/careers" element={<Company />} />
           <Route path="/testimonials" element={<Company />} />
           <Route path="/why-choose-us" element={<Company />} />
-          
+
           {/* Portfolio Pages */}
           <Route path="/web-portfolio" element={<Portfolio />} />
           <Route path="/mobile-portfolio" element={<Portfolio />} />
           <Route path="/design-portfolio" element={<Portfolio />} />
           <Route path="/seo-portfolio" element={<Portfolio />} />
           <Route path="/branding-portfolio" element={<Portfolio />} />
-          
+
           {/* Resource Pages */}
           <Route path="/case-studies" element={<Resources />} />
           <Route path="/whitepapers" element={<Resources />} />
@@ -119,7 +139,7 @@ export default function App() {
           <Route path="/guides" element={<Resources />} />
           <Route path="/webinars" element={<Resources />} />
           <Route path="/faqs" element={<Resources />} />
-          
+
           {/* Additional Pages */}
           <Route path="/get-quote" element={<Contact />} />
         </Routes>

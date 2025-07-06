@@ -173,6 +173,92 @@ export default function Header() {
             <li className="nav-item dropdown">
               <button 
                 className="nav-link dropdown-trigger" 
+                onClick={(e) => toggleMobileDropdown('industries', e)}
+                aria-expanded={activeDropdown === 'industries'}
+              >
+                Industries <span className={`dropdown-arrow ${activeDropdown === 'industries' ? 'rotated' : ''}`}>▼</span>
+              </button>
+              <div className={`dropdown-menu industries-dropdown ${activeDropdown === 'industries' ? 'mobile-active' : ''}`}>
+                <div className="dropdown-grid">
+                  <div className="dropdown-section">
+                    <h4>Healthcare & Medical</h4>
+                    <Link to="/healthcare-seo" className="dropdown-item" onClick={handleLinkClick}>
+                      <span className="item-icon">🏥</span>
+                      <div>
+                        <strong>Healthcare SEO</strong>
+                        <small>Medical practices & hospitals</small>
+                      </div>
+                    </Link>
+                    <Link to="/dental-seo" className="dropdown-item" onClick={handleLinkClick}>
+                      <span className="item-icon">🦷</span>
+                      <div>
+                        <strong>Dental SEO</strong>
+                        <small>Dental practices & clinics</small>
+                      </div>
+                    </Link>
+                    <Link to="/veterinary-seo" className="dropdown-item" onClick={handleLinkClick}>
+                      <span className="item-icon">🐾</span>
+                      <div>
+                        <strong>Veterinary SEO</strong>
+                        <small>Animal hospitals & vets</small>
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="dropdown-section">
+                    <h4>Professional Services</h4>
+                    <Link to="/legal-seo" className="dropdown-item" onClick={handleLinkClick}>
+                      <span className="item-icon">⚖️</span>
+                      <div>
+                        <strong>Legal SEO</strong>
+                        <small>Law firms & attorneys</small>
+                      </div>
+                    </Link>
+                    <Link to="/accounting-seo" className="dropdown-item" onClick={handleLinkClick}>
+                      <span className="item-icon">💼</span>
+                      <div>
+                        <strong>Accounting SEO</strong>
+                        <small>CPA firms & bookkeepers</small>
+                      </div>
+                    </Link>
+                    <Link to="/consulting-seo" className="dropdown-item" onClick={handleLinkClick}>
+                      <span className="item-icon">🎯</span>
+                      <div>
+                        <strong>Consulting SEO</strong>
+                        <small>Business consultants</small>
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="dropdown-section">
+                    <h4>Business & Retail</h4>
+                    <Link to="/real-estate-seo" className="dropdown-item" onClick={handleLinkClick}>
+                      <span className="item-icon">🏠</span>
+                      <div>
+                        <strong>Real Estate SEO</strong>
+                        <small>Realtors & property</small>
+                      </div>
+                    </Link>
+                    <Link to="/restaurant-seo" className="dropdown-item" onClick={handleLinkClick}>
+                      <span className="item-icon">🍽️</span>
+                      <div>
+                        <strong>Restaurant SEO</strong>
+                        <small>Food & dining businesses</small>
+                      </div>
+                    </Link>
+                    <Link to="/automotive-seo" className="dropdown-item" onClick={handleLinkClick}>
+                      <span className="item-icon">🚗</span>
+                      <div>
+                        <strong>Automotive SEO</strong>
+                        <small>Car dealerships & repair</small>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li className="nav-item dropdown">
+              <button 
+                className="nav-link dropdown-trigger" 
                 onClick={(e) => toggleMobileDropdown('company', e)}
                 aria-expanded={activeDropdown === 'company'}
               >
