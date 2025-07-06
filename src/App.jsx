@@ -26,6 +26,8 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
+import SEOPricing from './pages/SEOPricing';
+import PPCPricing from './pages/PPCPricing';
 import SocialMediaMarketing from './pages/SocialMediaMarketing';
 import PPCManagement from './pages/PPCManagement';
 import EmailMarketing from './pages/EmailMarketing';
@@ -117,6 +119,17 @@ export default function App() {
           <Route path="/real-estate-seo" element={<RealEstateSEO />} />
           <Route path="/restaurant-seo" element={<RestaurantSEO />} />
           <Route path="/automotive-seo" element={<AutomotiveSEO />} />
+
+          {/* Pricing Pages */}
+          <Route path="/seo-pricing" element={<SEOPricing />} />
+          <Route path="/local-seo-pricing" element={<SEOPricing />} />
+          <Route path="/ecommerce-seo-pricing" element={<SEOPricing />} />
+          <Route path="/ppc-pricing" element={<PPCPricing />} />
+          <Route path="/social-media-pricing" element={<PPCPricing />} />
+          <Route path="/content-marketing-pricing" element={<SEOPricing />} />
+          <Route path="/web-development-pricing" element={<SEOPricing />} />
+          <Route path="/mobile-app-pricing" element={<PPCPricing />} />
+          <Route path="/ui-ux-pricing" element={<SEOPricing />} />
 
           {/* Company Pages */}
           <Route path="/company" element={<Company />} />

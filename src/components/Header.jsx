@@ -259,6 +259,92 @@ export default function Header() {
             <li className="nav-item dropdown">
               <button 
                 className="nav-link dropdown-trigger" 
+                onClick={(e) => toggleMobileDropdown('pricing', e)}
+                aria-expanded={activeDropdown === 'pricing'}
+              >
+                Pricing <span className={`dropdown-arrow ${activeDropdown === 'pricing' ? 'rotated' : ''}`}>▼</span>
+              </button>
+              <div className={`dropdown-menu pricing-dropdown ${activeDropdown === 'pricing' ? 'mobile-active' : ''}`}>
+                <div className="dropdown-grid">
+                  <div className="dropdown-section">
+                    <h4>SEO Packages</h4>
+                    <Link to="/seo-pricing" className="dropdown-item" onClick={handleLinkClick}>
+                      <span className="item-icon">🎯</span>
+                      <div>
+                        <strong>SEO Pricing</strong>
+                        <small>Complete SEO packages</small>
+                      </div>
+                    </Link>
+                    <Link to="/local-seo-pricing" className="dropdown-item" onClick={handleLinkClick}>
+                      <span className="item-icon">📍</span>
+                      <div>
+                        <strong>Local SEO Pricing</strong>
+                        <small>Local business packages</small>
+                      </div>
+                    </Link>
+                    <Link to="/ecommerce-seo-pricing" className="dropdown-item" onClick={handleLinkClick}>
+                      <span className="item-icon">🛒</span>
+                      <div>
+                        <strong>E-commerce SEO Pricing</strong>
+                        <small>Online store optimization</small>
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="dropdown-section">
+                    <h4>Digital Marketing</h4>
+                    <Link to="/ppc-pricing" className="dropdown-item" onClick={handleLinkClick}>
+                      <span className="item-icon">💰</span>
+                      <div>
+                        <strong>PPC Management Pricing</strong>
+                        <small>Paid advertising packages</small>
+                      </div>
+                    </Link>
+                    <Link to="/social-media-pricing" className="dropdown-item" onClick={handleLinkClick}>
+                      <span className="item-icon">📱</span>
+                      <div>
+                        <strong>Social Media Pricing</strong>
+                        <small>Social marketing packages</small>
+                      </div>
+                    </Link>
+                    <Link to="/content-marketing-pricing" className="dropdown-item" onClick={handleLinkClick}>
+                      <span className="item-icon">📝</span>
+                      <div>
+                        <strong>Content Marketing Pricing</strong>
+                        <small>Content creation packages</small>
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="dropdown-section">
+                    <h4>Development</h4>
+                    <Link to="/web-development-pricing" className="dropdown-item" onClick={handleLinkClick}>
+                      <span className="item-icon">💻</span>
+                      <div>
+                        <strong>Web Development Pricing</strong>
+                        <small>Website development costs</small>
+                      </div>
+                    </Link>
+                    <Link to="/mobile-app-pricing" className="dropdown-item" onClick={handleLinkClick}>
+                      <span className="item-icon">📱</span>
+                      <div>
+                        <strong>Mobile App Pricing</strong>
+                        <small>App development packages</small>
+                      </div>
+                    </Link>
+                    <Link to="/ui-ux-pricing" className="dropdown-item" onClick={handleLinkClick}>
+                      <span className="item-icon">🎨</span>
+                      <div>
+                        <strong>UI/UX Design Pricing</strong>
+                        <small>Design service packages</small>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li className="nav-item dropdown">
+              <button 
+                className="nav-link dropdown-trigger" 
                 onClick={(e) => toggleMobileDropdown('company', e)}
                 aria-expanded={activeDropdown === 'company'}
               >
