@@ -1788,3 +1788,25 @@ body {
   color: white;
   margin: 0 auto 20px;
 }
+
+@media (max-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: none; /* Disable hover on mobile */
+  }
+
+  .dropdown-menu.mobile-active {
+    display: block;
+    position: static;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .dropdown-menu {
+    position: static;
+    background: transparent;
+  }
+
+  .nav-menu {
+    overflow-x: hidden;
+  }
+}
