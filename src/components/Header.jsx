@@ -16,7 +16,14 @@ export default function Header() {
   }, []);
 
   const toggleMobileDropdown = (dropdownName) => {
-    setActiveDropdown(activeDropdown === dropdownName ? null : dropdownName);
+    if (window.innerWidth <= 768) {
+      setActiveDropdown(activeDropdown === dropdownName ? null : dropdownName);
+    }
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+    setActiveDropdown(null);
   };
 
   return (
@@ -35,7 +42,7 @@ export default function Header() {
 
         <nav className={`nav-menu ${isMobileMenuOpen ? 'open' : ''}`}>
           <li className="nav-item">
-            <Link to="/" className="nav-link">Home</Link>
+            <Link to="/" className="nav-link" onClick={closeMobileMenu}>Home</Link>
           </li>
 
           <li className="nav-item dropdown">
@@ -48,14 +55,14 @@ export default function Header() {
             <div className={`dropdown-menu ${activeDropdown === 'services' ? 'mobile-active' : ''}`}>
               <div className="dropdown-section">
                 <h4>Digital Marketing</h4>
-                <Link to="/seo-services" className="dropdown-item">SEO Services</Link>
-                <Link to="/local-seo" className="dropdown-item">Local SEO</Link>
-                <Link to="/technical-seo" className="dropdown-item">Technical SEO</Link>
-                <Link to="/ecommerce-seo" className="dropdown-item">E-commerce SEO</Link>
-                <Link to="/content-marketing" className="dropdown-item">Content Marketing</Link>
-                <Link to="/social-media-marketing" className="dropdown-item">Social Media Marketing</Link>
-                <Link to="/ppc-management" className="dropdown-item">PPC Management</Link>
-                <Link to="/email-marketing" className="dropdown-item">Email Marketing</Link>
+                <Link to="/seo-services" className="dropdown-item" onClick={closeMobileMenu}>SEO Services</Link>
+                <Link to="/local-seo" className="dropdown-item" onClick={closeMobileMenu}>Local SEO</Link>
+                <Link to="/technical-seo" className="dropdown-item" onClick={closeMobileMenu}>Technical SEO</Link>
+                <Link to="/ecommerce-seo" className="dropdown-item" onClick={closeMobileMenu}>E-commerce SEO</Link>
+                <Link to="/content-marketing" className="dropdown-item" onClick={closeMobileMenu}>Content Marketing</Link>
+                <Link to="/social-media-marketing" className="dropdown-item" onClick={closeMobileMenu}>Social Media Marketing</Link>
+                <Link to="/ppc-management" className="dropdown-item" onClick={closeMobileMenu}>PPC Management</Link>
+                <Link to="/email-marketing" className="dropdown-item" onClick={closeMobileMenu}>Email Marketing</Link>
               </div>
               <div className="dropdown-section">
                 <h4>Web Development</h4>
@@ -244,11 +251,11 @@ export default function Header() {
           </li>
 
           <li className="nav-item">
-            <Link to="/contact" className="nav-link">Contact</Link>
+            <Link to="/contact" className="nav-link" onClick={closeMobileMenu}>Contact</Link>
           </li>
 
           <li className="nav-item cta-nav">
-            <Link to="/get-quote" className="nav-link-cta">Get Quote</Link>
+            <Link to="/get-quote" className="nav-link-cta" onClick={closeMobileMenu}>Get Quote</Link>
           </li>
         </nav>
       </div>
